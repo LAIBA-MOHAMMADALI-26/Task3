@@ -12,7 +12,7 @@ const displayStudents = ()=>{
                                 ${student.skills.join(",")} <br>
                             </td>
                             <td id="img-data">
-                            hlewfj
+                                <img src="${student.img}">
                             </td>
             `
             tableBody.append(row);

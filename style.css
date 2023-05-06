@@ -94,3 +94,7 @@ input[type="email"]{
 #img-data{
     width: 20%;
 }
+
+img{
+    height: 60px;
+}
