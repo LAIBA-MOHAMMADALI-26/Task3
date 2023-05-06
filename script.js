@@ -1,3 +1,29 @@
+const displayStudents = ()=>{
+    let tableBody = document.querySelector("#students");
+
+    if(localStorage.getItem("students")){
+        Array.from(JSON.parse(localStorage.getItem("students"))).forEach((student)=>{
+            let row = document.createElement("tr");
+            row.innerHTML = `<td>
+                                <b>${student.uname}</b> <br>
+                                ${student.gender} <br>
+                                <a href= "mailto: ${student.email}">${student.email}</a> <br>
+                                ${student.website} <br>
+                                ${student.skills.join(",")} <br>
+                            </td>
+                            <td>
+                            hlewfj
+                            </td>
+            `
+            tableBody.append(row);
+
+        });
+
+    }
+}
+
+displayStudents(); 
+
 // REQUIRED COMPONENTS 
 
 let uname = document.querySelector("#name");
@@ -11,6 +37,7 @@ let skills = [];
 
 let enroll = document.querySelector("#enroll");
 let clear = document.querySelector("#clear");
+
 
 
 // FUNCTIONS
@@ -50,6 +77,8 @@ const addToStorage = ()=>{
     }
     
 }
+
+
 // EVENT LISTENERS
 
 enroll.addEventListener("click", (e)=>{
