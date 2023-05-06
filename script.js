@@ -11,7 +11,7 @@ const displayStudents = ()=>{
                                 ${student.website} <br>
                                 ${student.skills.join(",")} <br>
                             </td>
-                            <td>
+                            <td id="img-data">
                             hlewfj
                             </td>
             `

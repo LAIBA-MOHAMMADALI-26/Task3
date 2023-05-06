@@ -65,15 +65,32 @@ input[type="email"]{
 }
 
 .enrolled{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 40%;
 }
 
+.enrolled h4{
+    margin: 2%;
+}
+
 .enrolled table{
-    width: 100%;
+    width: 80%;
     border: 0.2em solid rgb(167,201,65);
 }
 
 .enrolled thead{
     background-color: rgb(167,201,65);
     color: white;
+}
+
+.enrolled td{
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+
+#img-data{
+    width: 20%;
 }
